@@ -736,7 +736,9 @@ SECTION 6: LIVE DEMONSTRATION & NEXT STEPS
 6.1 LIVE PROJECT LINKS
 ================================================================================
 PRIMARY DASHBOARD (Web Application):
-[INSERT YOUR HOSTED LINK HERE]
+https://sharon-codes.github.io/UIDAI-Hackathon/dashboard/v2/
+
+**MOBILE OPTIMIZED**: Fully responsive design tested on tablets, phones, and landscape mode.
 
 To experience the full capabilities of Aadhaar Pulse X, please visit the link above and:
 1. Navigate to "State-wise Analytics" to see the V-shape overview grid
@@ -746,8 +748,9 @@ To experience the full capabilities of Aadhaar Pulse X, please visit the link ab
 5. Click "EXPORT INTELLIGENCE" to download a district report
 
 GITHUB REPOSITORY (Source Code):
-[INSERT YOUR GITHUB LINK HERE]
-Contains: Full Python preprocessing scripts, JavaScript analytics engine, and raw datasets.
+https://github.com/Sharon-codes/UIDAI-Hackathon
+
+Contains: Full Python preprocessing scripts, JavaScript analytics engine, raw datasets, and comprehensive documentation.
 
 6.2 SCALABILITY & FUTURE ENHANCEMENTS
 ================================================================================
