@@ -859,3 +859,221 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* ========================================
+   MOBILE RESPONSIVE OPTIMIZATIONS
+   ======================================== */
+
+/* Tablets and smaller (below 768px) */
+@media (max-width: 768px) {
+
+    /* Navigation - Hamburger style */
+    .glass-dock {
+        padding: 10px 15px;
+    }
+
+    .dock-links {
+        display: none;
+        /* Hide nav links on mobile, show hamburger if needed */
+    }
+
+    .logo-x {
+        font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero-x {
+        padding: 80px 20px 60px;
+        min-height: 70vh;
+    }
+
+    .hero-content-x h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+
+    .hero-content-x p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Pillars Section */
+    .pillars-x {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .pillar-sticky {
+        position: static;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .pillars-scroll {
+        gap: 20px;
+    }
+
+    .pi-card {
+        min-width: 100%;
+        padding: 20px;
+    }
+
+    /* Deep Dive Controls */
+    .dd-controls-bar {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .dd-control-item {
+        width: 100%;
+    }
+
+    .dd-select {
+        font-size: 0.95rem;
+        padding: 12px 15px;
+    }
+
+    /* Deep Dive Actions Bar */
+    .dd-actions-bar {
+        flex-direction: column !important;
+        gap: 10px !important;
+        padding: 15px;
+    }
+
+    .future-toggle-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #btnDownloadReport {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 20px;
+    }
+
+    /* Linear Header */
+    .linear-header {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 15px;
+    }
+
+    .lh-left {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    .lh-left h2 {
+        font-size: 2rem !important;
+    }
+
+    /* Linear Metrics */
+    .linear-metrics {
+        flex-direction: column !important;
+        padding: 15px !important;
+    }
+
+    .lm-item {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .lm-item:last-child {
+        border-bottom: none;
+    }
+
+    .lm-line {
+        display: none !important;
+        /* Hide vertical separators on mobile */
+    }
+
+    /* Strategy Grid */
+    .strategy-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+    }
+
+    .strategy-card {
+        padding: 15px;
+    }
+
+    .strat-header {
+        font-size: 0.8rem;
+    }
+
+    .strat-body {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small mobile devices (below 480px) */
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero-content-x h1 {
+        font-size: 2rem !important;
+    }
+
+    .meta-tag {
+        font-size: 0.65rem;
+        padding: 6px 12px;
+    }
+
+    /* Buttons */
+    .btn-main {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Cards */
+    .pi-card {
+        padding: 15px;
+    }
+
+    .pi-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Deep Dive Funnel Header */
+    .dd-funnel-header h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Linear Header - Even smaller */
+    .lh-left h2 {
+        font-size: 1.8rem !important;
+    }
+
+    #d-state {
+        font-size: 0.9rem !important;
+    }
+
+    #d-ami {
+        font-size: 2.5rem !important;
+    }
+
+    /* Metric values */
+    .lm-item label {
+        font-size: 0.7rem;
+    }
+
+    .lm-item strong {
+        font-size: 1.3rem;
+    }
+}
+
+/* Landscape mobile optimization */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero-x {
+        min-height: 100vh;
+        padding: 60px 20px 40px;
+    }
+
+    .hero-content-x h1 {
+        font-size: 2rem !important;
+    }
+}
