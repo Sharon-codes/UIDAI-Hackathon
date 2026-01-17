@@ -1,0 +1,73 @@
+<!-- State-Wise Analytics Section -->
+<section id="state-analytics" class="state-analytics-x">
+    <div class="analytics-header">
+        <h2>State-Wise <span>Performance Analytics</span></h2>
+        <p style="color:var(--text-dim); font-size:1.1rem; margin-top:15px;">Comparative analysis across all states and
+            districts</p>
+    </div>
+
+    <div class="state-selector-panel">
+        <label
+            style="font-size:0.8rem; color:var(--text-dim); text-transform:uppercase; margin-bottom:15px; display:block;">Select
+            State for Detailed Analysis</label>
+        <select id="stateAnalyticsFilter" class="state-select-large">
+            <option value="">All States Overview</option>
+        </select>
+    </div>
+
+    <!-- Overview Cards -->
+    <div id="stateOverviewCards" class="overview-cards-grid">
+        <!-- Dynamically populated -->
+    </div>
+
+    <!-- Charts Grid -->
+    <div class="charts-grid">
+        <div class="chart-card">
+            <h4>Top 10 Districts by AMI</h4>
+            <canvas id="chartTopAMI"></canvas>
+        </div>
+        <div class="chart-card">
+            <h4>Bottom 10 Districts by AMI</h4>
+            <canvas id="chartBottomAMI"></canvas>
+        </div>
+        <div class="chart-card">
+            <h4>Best Compliance (ERP) Districts</h4>
+            <canvas id="chartTopERP"></canvas>
+        </div>
+        <div class="chart-card">
+            <h4>Worst Compliance (ERP) Districts</h4>
+            <canvas id="chartBottomERP"></canvas>
+        </div>
+        <div class="chart-card">
+            <h4>Highest Migration (ICMP) Districts</h4>
+            <canvas id="chartTopICMP"></canvas>
+        </div>
+        <div class="chart-card">
+            <h4>Lowest Migration (ICMP) Districts</h4>
+            <canvas id="chartBottomICMP"></canvas>
+        </div>
+    </div>
+
+    <!-- Detailed State Table -->
+    <div id="stateDetailTable" class="state-detail-section hidden">
+        <h3 id="stateDetailTitle">State Performance Details</h3>
+        <div class="table-responsive">
+            <table id="districtTable" class="data-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>District</th>
+                        <th>AMI Score</th>
+                        <th>ERP</th>
+                        <th>ICMP</th>
+                        <th>Inclusion</th>
+                        <th>Integrity</th>
+                    </tr>
+                </thead>
+                <tbody id="districtTableBody">
+                    <!-- Dynamically populated -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

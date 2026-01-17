@@ -1,0 +1,29 @@
+# Large API Data Folders (not needed for deployment)
+api_data_aadhar_biometric/
+api_data_aadhar_demographic/
+api_data_aadhar_enrolment/
+
+# Large intermediate files
+aadhaar_master_cleaned.csv
+
+# Cleanup scripts
+cleanup_project.ps1
+
+# Old/duplicate files
+district_pulse_report.csv
+district_data.json
+district_full_data.json
+analytical_engine.py
+DATA_METHODOLOGY.md
+solution_proposals.txt
+plot_*.png
+
+# Old dashboard v1 files
+dashboard/index.html
+dashboard/script.js
+dashboard/style.css
+
+# System files
+.DS_Store
+Thumbs.db
+*.log

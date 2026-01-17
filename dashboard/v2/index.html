@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhaar Pulse X | Societal Intelligence OS</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="data.js"></script>
+</head>
+
+<body>
+    <nav class="glass-dock">
+        <div class="dock-inner">
+            <div class="logo-x">AADHAAR<span>PULSE X</span></div>
+            <div class="dock-links">
+                <a href="#hero">Start</a>
+                <a href="#analytical-pillars">Framework</a>
+                <a href="#deep-dive">Explorer</a>
+                <a href="#state-analytics">Analytics</a>
+                <a href="#uvp">Intelligence</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-x">
+        <div class="hero-content-x">
+            <div class="meta-tag">UIDAI INNOVATION × SOCIETAL TRENDS</div>
+            <h1>The Intelligence <span>Layer</span> of India</h1>
+            <p>Moving beyond counts into <strong>Predictive Societal Engineering</strong>. We process millions of
+                metadata records to safeguard identity integrity for 1.4 Billion citizens.</p>
+            <div class="hero-actions">
+                <button class="btn-main" onclick="document.querySelector('#deep-dive').scrollIntoView()">Start Deep
+                    Dive</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="analytical-pillars" class="pillars-x">
+        <div class="pillar-sticky">
+            <h2>The Five-Pillar Innovation</h2>
+            <p style="color:var(--text-dim); margin-top:15px; line-height:1.7;">A comprehensive multi-dimensional
+                framework that transforms raw Aadhaar metadata into actionable intelligence for policy-makers and
+                administrators.</p>
+        </div>
+        <div class="pillar-scroll">
+            <div class="p-card-x">
+                <span class="p-id">PILLAR 01 • ERP</span>
+                <h3>Exclusion Risk Pre-emption</h3>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">The Problem:</strong> Children who miss mandatory biometric
+                    updates at Age 5 and Age 15 face service denial in critical welfare schemes (PM-POSHAN,
+                    scholarships, subsidies).
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">Our Analysis:</strong> We track biometric update compliance
+                    rates across age cohorts to identify districts where children are at risk of exclusion before it
+                    happens.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8;">
+                    <strong style="color:var(--accent);">Impact:</strong> Pre-emptive deployment of mobile enrollment
+                    units to schools, preventing mass service denial.
+                </p>
+            </div>
+
+            <div class="p-card-x">
+                <span class="p-id">PILLAR 02 • ICMP</span>
+                <h3>Identity Churn & Migration Pulse</h3>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">The Problem:</strong> Traditional Census data is 10+ years old,
+                    making it impossible to track real-time internal migration for resource planning.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">Our Analysis:</strong> Demographic update velocity acts as a
+                    high-frequency proxy for labor movement. Sudden spikes indicate migration influx to industrial/urban
+                    nodes.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8;">
+                    <strong style="color:var(--accent);">Impact:</strong> Dynamic ONORC (One Nation One Ration Card)
+                    resource allocation and portable identity infrastructure.
+                </p>
+            </div>
+
+            <div class="p-card-x">
+                <span class="p-id">PILLAR 03 • GHOST HUNTER</span>
+                <h3>Integrity Shield & Anomaly Detection</h3>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">The Problem:</strong> Rogue operators generate fake update
+                    transactions ("Data Milling") to inflate performance metrics without actual citizen engagement.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">Our Analysis:</strong> We detect "decoupling anomalies" - areas
+                    with high update volume but zero corresponding population growth.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8;">
+                    <strong style="color:var(--accent);">Impact:</strong> Forensic audits and operator license
+                    suspension,
+                    protecting system integrity.
+                </p>
+            </div>
+
+            <div class="p-card-x">
+                <span class="p-id">PILLAR 04 • LAST MILE</span>
+                <h3>Inclusivity "Last Mile" Tracker</h3>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">The Problem:</strong> Marginalized populations (tribal,
+                    elderly, disabled) in remote areas remain outside the Aadhaar ecosystem.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">Our Analysis:</strong> We isolate 18+ first-time enrollments to
+                    map the "final frontier" of uncovered populations.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8;">
+                    <strong style="color:var(--accent);">Impact:</strong> Targeted "Aadhaar-on-Wheels" deployment to
+                    forest villages and remote hamlets.
+                </p>
+            </div>
+
+            <div class="p-card-x">
+                <span class="p-id">PILLAR 05 • AMI (COMPOSITE METRIC)</span>
+                <h3>Aadhaar Maturity Index</h3>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">The Problem:</strong> No standardized metric exists to compare
+                    district-level Aadhaar ecosystem health across all dimensions.
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8; margin-bottom:15px;">
+                    <strong style="color:var(--accent);">Our Analysis:</strong> AMI is a composite score (0-10)
+                    calculated as:
+                    <br><code
+                        style="background:rgba(0,242,255,0.1); padding:8px; display:block; margin:10px 0; border-radius:6px; font-size:0.85rem;">
+                    AMI = (ERP + Last Mile) / (1 + Ghost Flag)
+                    </code>
+                    This means:
+                    <br>• Higher compliance (ERP) increases the score
+                    <br>• Higher inclusion (Last Mile) increases the score
+                    <br>• Fraud detection (Ghost Flag) cuts the score in half
+                    <br>• ICMP is tracked separately as a migration indicator
+                </p>
+                <p style="color:var(--text-dim); line-height:1.8;">
+                    <strong style="color:var(--accent);">Impact:</strong> Single performance benchmark for resource
+                    allocation prioritization across 724 districts. Districts with fraud flags are automatically
+                    penalized.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="deep-dive" class="explorer-x">
+        <!-- Funnel Header -->
+        <div class="dd-funnel-header" style="text-align:center; margin-bottom:20px;">
+            <h2 style="font-size:2rem; letter-spacing:2px; color:white; margin-bottom:10px;">REGIONAL INTELLIGENCE
+                EXPLORER</h2>
+            <div style="width:50px; height:2px; background:var(--accent); margin:0 auto;"></div>
+        </div>
+
+        <!-- Controls -->
+        <div class="dd-controls-bar" style="justify-content: center; max-width: 800px; margin: 0 auto 20px;">
+            <div class="dd-control-item">
+                <label
+                    style="display:block; font-size:0.7rem; color:var(--text-dim); margin-bottom:8px; text-transform:uppercase;">01.
+                    Select State</label>
+                <select id="ddStateSelect" class="dd-select">
+                    <option value="">Choose State...</option>
+                </select>
+            </div>
+            <div class="dd-control-item">
+                <label
+                    style="display:block; font-size:0.7rem; color:var(--text-dim); margin-bottom:8px; text-transform:uppercase;">02.
+                    Select District</label>
+                <select id="ddDistrictSelect" class="dd-select" disabled>
+                    <option value="">Select State First</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Action Toolbar -->
+        <div class="dd-actions-bar hidden" id="ddActions"
+            style="max-width:800px; margin:0 auto 20px; display:flex; justify-content:flex-end; gap:15px; align-items:center;">
+            <div class="future-toggle-group"
+                style="display:flex; align-items:center; gap:10px; background:rgba(0,0,0,0.3); padding:8px 15px; border-radius:30px; border:1px solid var(--border);">
+                <span
+                    style="font-size:0.75rem; color:var(--text-dim); text-transform:uppercase; letter-spacing:1px; font-weight:700;">FutureCast
+                    AI</span>
+                <label class="switch">
+                    <input type="checkbox" id="futureCastToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <button id="btnDownloadReport" class="btn-action"
+                style="background:var(--accent); color:#000; border:none; padding:10px 20px; border-radius:30px; font-weight:700; font-size:0.8rem; cursor:pointer; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-file-download"></i> REPORT
+            </button>
+        </div>
+
+        <main id="districtDisplay" class="district-display hidden" style="margin-top:10px;">
+            <div class="linear-header"
+                style="display:flex; justify-content:space-between; align-items:center; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.1);">
+                <div class="lh-left" style="display:flex; align-items:baseline; gap:15px;">
+                    <h2 id="d-name" style="font-size:2.5rem; line-height:1; margin-bottom:0;">DISTRICT</h2>
+                    <span id="d-state"
+                        style="color:var(--accent); font-size:1.2rem; font-weight:700; text-transform:uppercase;">STATE</span>
+                </div>
+                <div class="lh-right">
+                    <div class="ami-pill" style="text-align:right;">
+                        <small style="display:block; font-size:0.8rem; color:var(--text-dim); margin-bottom:5px;">AMI
+                            INDEX</small>
+                        <strong id="d-ami" style="font-size:3.5rem; color:var(--accent); line-height:1;">0.0</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linear-metrics"
+                style="display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,0.03); padding:20px 25px; border-radius:12px; border:1px solid var(--border); margin:20px 0;">
+                <div class="lm-item">
+                    <label
+                        style="display:block; font-size:0.8rem; color:var(--text-dim); margin-bottom:10px; text-transform:uppercase;">Exclusion
+                        Risk (ERP)</label>
+                    <span id="erp-val" style="font-size:2rem; font-weight:700; color:white;">0%</span>
+                </div>
+                <div class="lm-line" style="width:1px; height:50px; background:rgba(255,255,255,0.1);"></div>
+                <div class="lm-item">
+                    <label
+                        style="display:block; font-size:0.8rem; color:var(--text-dim); margin-bottom:10px; text-transform:uppercase;">Migration
+                        (ICMP)</label>
+                    <span id="icmp-val" style="font-size:2rem; font-weight:700; color:white;">0%</span>
+                </div>
+                <div class="lm-line" style="width:1px; height:50px; background:rgba(255,255,255,0.1);"></div>
+                <div class="lm-item">
+                    <label
+                        style="display:block; font-size:0.8rem; color:var(--text-dim); margin-bottom:10px; text-transform:uppercase;">Integrity
+                        Status</label>
+                    <span id="ghost-val" style="font-size:1.5rem; font-weight:700; color:white;">Normal</span>
+                </div>
+                <div class="lm-line" style="width:1px; height:50px; background:rgba(255,255,255,0.1);"></div>
+                <div class="lm-item">
+                    <label
+                        style="display:block; font-size:0.8rem; color:var(--text-dim); margin-bottom:10px; text-transform:uppercase;">Inclusion
+                        (18+)</label>
+                    <span id="inclusion-val" style="font-size:2rem; font-weight:700; color:white;">0%</span>
+                </div>
+            </div>
+
+            <div class="linear-brief">
+                <div id="d-solution-detailed" class="lb-content">
+                    <!-- AI Content -->
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section id="uvp" class="uvp-section">
+        <div class="uvp-header">
+            <h2>Why This Model <span>Is Unique</span></h2>
+            <p style="color:var(--text-dim); font-size:1.1rem;">Our framework moves beyond descriptive statistics into
+                predictive administrative intelligence.</p>
+        </div>
+        <div class="uvp-grid">
+            <div class="uvp-card">
+                <h3>Predictive Social Security</h3>
+                <p>Unlike standard reports that show "past" enrolment, our ERP Pillar predicts <strong>future service
+                        denial</strong>. It identifies children who will be excluded before it happens, allowing for
+                    pre-emptive van deployment.</p>
+            </div>
+            <div class="uvp-card">
+                <h3>Real-Time Migration Mapping</h3>
+                <p>Traditional migration data (Census) is 10+ years old. Our ICMP model uses <strong>high-frequency
+                        demographic ripples</strong> to map labor movement in 2025, enabling dynamic ONORC resource
+                    allocation.</p>
+            </div>
+            <div class="uvp-card">
+                <h3>Behavioral Fraud Detection</h3>
+                <p>The "Ghost Hunter" doesn't just look for errors; it detects <strong>Decoupling Anomalies</strong>. By
+                    correlating update volume with growth stagnation, we catch "Data Milling" signatures that standard
+                    audits miss.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATE-WISE ANALYTICS SECTION -->
+    <section id="state-analytics" class="state-analytics-x">
+        <div class="analytics-header">
+            <h2>State-Wise <span>Performance Analytics</span></h2>
+            <p style="color:var(--text-dim); font-size:1.1rem; margin-top:15px;">Comparative analysis across all states
+                and districts</p>
+        </div>
+
+        <div class="state-selector-panel">
+            <label
+                style="font-size:0.8rem; color:var(--text-dim); text-transform:uppercase; margin-bottom:15px; display:block;">Select
+                State for Detailed Analysis</label>
+            <select id="stateAnalyticsFilter" class="state-select-large">
+                <option value="">All States Overview</option>
+            </select>
+        </div>
+
+        <!-- Overview Cards -->
+        <div id="stateOverviewCards" class="overview-cards-grid">
+            <!-- Dynamically populated -->
+        </div>
+
+        <!-- Charts Grid -->
+        <div class="charts-grid">
+            <div class="chart-card">
+                <h4>Top 10 Districts by AMI</h4>
+                <canvas id="chartTopAMI"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Bottom 10 Districts by AMI</h4>
+                <canvas id="chartBottomAMI"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Best Compliance (ERP) Districts</h4>
+                <canvas id="chartTopERP"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Worst Compliance (ERP) Districts</h4>
+                <canvas id="chartBottomERP"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Highest Migration (ICMP) Districts</h4>
+                <canvas id="chartTopICMP"></canvas>
+            </div>
+            <div class="chart-card">
+                <h4>Lowest Migration (ICMP) Districts</h4>
+                <canvas id="chartBottomICMP"></canvas>
+            </div>
+        </div>
+
+        <!-- Detailed State Table -->
+        <div id="stateDetailTable" class="state-detail-section hidden">
+            <h3 id="stateDetailTitle">State Performance Details</h3>
+            <div class="table-responsive">
+                <table id="districtTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>District</th>
+                            <th>AMI Score</th>
+                            <th>ERP</th>
+                            <th>ICMP</th>
+                            <th>Inclusion</th>
+                            <th>Integrity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="districtTableBody">
+                        <!-- Dynamically populated -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="uvp" class="uvp-section">
+        <div class="uvp-header">
+            <h2>Why This Model <span>Is Unique</span></h2>
+            <p style="color:var(--text-dim); font-size:1.1rem;">Our framework moves beyond descriptive statistics into
+                predictive administrative intelligence.</p>
+        </div>
+        <div class="uvp-grid">
+            <div class="uvp-card">
+                <h3>Predictive Social Security</h3>
+                <p>Unlike standard reports that show "past" enrolment, our ERP Pillar predicts <strong>future service
+                        denial</strong>. It identifies children who will be excluded before it happens, allowing for
+                    pre-emptive van deployment.</p>
+            </div>
+            <div class="uvp-card">
+                <h3>Real-Time Migration Mapping</h3>
+                <p>Traditional migration data (Census) is 10+ years old. Our ICMP model uses <strong>high-frequency
+                        demographic ripples</strong> to map labor movement in 2025, enabling dynamic ONORC resource
+                    allocation.</p>
+            </div>
+            <div class="uvp-card">
+                <h3>Behavioral Fraud Detection</h3>
+                <p>The "Ghost Hunter" doesn't just look for errors; it detects <strong>Decoupling Anomalies</strong>. By
+                    correlating update volume with growth stagnation, we catch "Data Milling" signatures that standard
+                    audits miss.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-x">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>AADHAAR<span>PULSE X</span></h3>
+                <p>A Societal Intelligence Framework built for the UIDAI Innovation Challenge 2026</p>
+                <p style="font-size:0.85rem; margin-top:20px;">Transforming raw metadata into actionable policy
+                    frameworks through advanced multivariate analysis and predictive modeling.</p>
+            </div>
+            <div class="footer-stats">
+                <div class="stat-item">
+                    <label>Records Analyzed</label>
+                    <strong>1.58M</strong>
+                </div>
+                <div class="stat-item">
+                    <label>District Fidelity</label>
+                    <strong>724</strong>
+                </div>
+                <div class="stat-item">
+                    <label>AMI Standardized</label>
+                    <strong>100%</strong>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Aadhaar Pulse X | Powered by Advanced Statistical Analysis & Predictive Intelligence</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="analytics.js"></script>
+</body>
+
+</html>

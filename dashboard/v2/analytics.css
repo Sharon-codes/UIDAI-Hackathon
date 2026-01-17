@@ -1,0 +1,206 @@
+/* STATE ANALYTICS SECTION */
+.state-analytics-x {
+    padding: 100px 10%;
+    background: #000;
+}
+
+.analytics-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.analytics-header h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.analytics-header h2 span {
+    color: var(--accent);
+    text-shadow: 0 0 30px rgba(0, 242, 255, 0.4);
+}
+
+.state-selector-panel {
+    max-width: 500px;
+    margin: 0 auto 60px;
+    position: relative;
+}
+
+.state-select-large {
+    width: 100%;
+    padding: 18px 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 100px;
+    /* Pill shape */
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+    appearance: none;
+    /* Remove default arrow */
+    font-family: 'Space Grotesk', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Fix for unreadable white-on-white text in dropdowns */
+.state-select-large option {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.state-select-large:hover,
+.state-select-large:focus {
+    border-color: var(--accent);
+    background: rgba(0, 242, 255, 0.05);
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);
+}
+
+/* Custom Arrow */
+.state-selector-panel::after {
+    content: '▼';
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accent);
+    font-size: 0.8rem;
+    pointer-events: none;
+}
+
+.overview-cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1000px) {
+    .overview-cards-grid {
+        gap: 20px;
+    }
+}
+
+.overview-card {
+    flex: 1 0 30%;
+    /* Force 3 per row mostly */
+    min-width: 300px;
+    max-width: 400px;
+    /* Constrain width */
+
+    padding: 30px;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.overview-card h4 {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.overview-card .big-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.overview-card .sub-text {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.chart-card {
+    padding: 30px;
+    background: var(--glass);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+
+.chart-card h4 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.chart-card canvas {
+    max-height: 300px;
+}
+
+.state-detail-section {
+    margin-top: 60px;
+}
+
+.state-detail-section h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: var(--accent);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table thead {
+    background: rgba(0, 242, 255, 0.1);
+}
+
+.data-table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 0.85rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent);
+}
+
+.data-table td {
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-dim);
+}
+
+.data-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 1200px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
